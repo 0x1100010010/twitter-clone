@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-git_source(:github) { |repo| "https://github.com/#{repo}.git" }
+git_source(:github) { |repo| 'https://github.com/#{repo}.git' }
 
 ruby '2.7.2'
 
@@ -42,6 +42,10 @@ group :development do
   gem 'listen', '~> 3.3'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
+  gem 'binding_of_caller', '~> 1.0'
+  gem 'better_errors', '~> 2.9'
+  gem 'guard', '~> 2.16'
+  gem 'guard-livereload', '~> 2.5'
 end
 
 group :test do
@@ -55,13 +59,8 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "binding_of_caller", "~> 1.0", :group => :development
-gem "better_errors", "~> 2.9", :group => :development
-
-gem "guard", "~> 2.16", :group => :development
-gem "guard-livereload", "~> 2.5", :group => :development
-
-gem "simple_form", "~> 5.0"
-gem "gravatar_image_tag", "~> 1.2"
-
-gem "devise", "~> 4.7"
+gem 'simple_form', '~> 5.0'
+gem 'gravatar_image_tag', '~> 1.2'
+gem 'devise', '~> 4.7'
+gem 'bootstrap', '~> 5.0.0.beta1'
+gem "jquery-rails", "~> 4.4"
