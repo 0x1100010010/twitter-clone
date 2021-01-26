@@ -1,6 +1,61 @@
 <p id="notice"><%= notice %></p>
+<div class="container-fluid">
+  <div class="row">
+
+    <div class="col-3">
+      <div class="container">
+        <div class="row justify-center py-4">
+          <div class="card text-dark bg-light p-0">
+            <div class="card-header">Account Info</div>
+            <div class="card-body">
+              <h5 class="card-title">Light card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="card-footer">Footer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-6">
+      <div class="container">
+        <div class="row justify-center py-4">
+          <div class="card text-dark bg-light p-0">
+            <div class="card-header">Tweets</div>
+            <div class="card-body">
+              <h5 class="card-title">Light card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="card-footer">Footer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="col-3">
+      <div class="container">
+        <div class="row justify-center py-4">
+          <div class="card text-dark bg-light p-0">
+            <div class="card-header">Who To Follow</div>
+            <div class="card-body">
+              <h5 class="card-title">Light card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+            <div class="card-footer">Footer</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</div>
 
 <h1>Tweets</h1>
+
+
 
 <table>
   <thead>
@@ -12,12 +67,12 @@
 
   <tbody>
     <% @tweets.each do |tweet| %>
-      <tr>
-        <td><%= tweet.tweet %></td>
-        <td><%= link_to 'Show', tweet %></td>
-        <td><%= link_to 'Edit', edit_tweet_path(tweet) %></td>
-        <td><%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
+    <tr>
+      <td><%= tweet.tweet %></td>
+      <td><%= link_to 'Show', tweet %></td>
+      <td><%= link_to 'Edit', edit_tweet_path(tweet) %></td>
+      <td><%= link_to 'Destroy', tweet, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    </tr>
     <% end %>
   </tbody>
 </table>
